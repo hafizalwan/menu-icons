@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hamburger Menu Icon</title>
+
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+  </head>
+  <body>
+
+    <a href="#">
+      <span><i class="fas fa-bars"></i></span>
+      <span><i class="fas fa-times"></i></span>
+    </a>
+
+
+
+    <!-- jQuery % JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('a').click(function(){
+          $('a span:nth-child(1)').toggleClass('active')
+        });
+      });
+    </script>
+  </body>
+</html>
